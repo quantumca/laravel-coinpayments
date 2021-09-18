@@ -1,18 +1,17 @@
 # Laravel Coinpayments #
 Implementation of most of the CoinPayments functionality. 
 
-[![Coinpayments Website](https://www.coinpayments.net/images/b/821661e7a0604282da58f3f0e43e1888576f55f64458f53b193c90a9262a4e2e.png
-)](https://www.coinpayments.net/index.php?ref=a458c004de21a18c71849871781be820)
+[![Coinpayments Website](https://www.coinpayments.net/images/b/banner6_728x90-3.jpg)](https://www.coinpayments.net/index.php?ref=b3eeecdbaf95ca82e86a1ee7f7ff57b0)
 
 ### [Example API](https://github.com/kevupton/example-laravel-coinpayments)
 
 ### Require
 
 ```
-composer require kevupton/laravel-coinpayments
+composer require quantumca/laravel-coinpayments
 ```
 
-### 1. Install Service Provider
+### 1. Install Service Provider (If Laravel < 5.5)
 
 ```php
 // add directly from the app 
