@@ -8,7 +8,9 @@
 
 namespace Kevupton\LaravelCoinpayments\Facades;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Facade;
+use Kevupton\LaravelCoinpayments\Models\Ipn;
 use Kevupton\LaravelCoinpayments\Providers\LaravelCoinpaymentsServiceProvider;
 
 /**
@@ -16,6 +18,7 @@ use Kevupton\LaravelCoinpayments\Providers\LaravelCoinpaymentsServiceProvider;
  * @method static Transaction createTransaction($req)
  * @method static Transfer createTransfer($amount, $currency, $merchant, $autoConfirm = false)
  * @method static Withdrawal createWithdrawal($amount, $currency, $address, $autoConfirm = false, $ipnUrl = '')
+ * @method static Ipn validateIPNRequest(Request $request)
  */
 class Coinpayments extends Facade
 {
