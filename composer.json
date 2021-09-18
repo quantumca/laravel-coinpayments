@@ -1,5 +1,5 @@
 {
-    "name": "kevupton/laravel-coinpayments",
+    "name": "quantumca/laravel-coinpayments",
     "description": "Coinpayments for Laravel",
     "keywords": ["laravel", "lumen", "coinpayments"],
     "type": "Extension",
@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": ">=5.5",
-        "kevupton/laravel-package-service-provider": "^0.0.5",
-        "doctrine/dbal": "^2.6"
+        "kevupton/laravel-package-service-provider": ">=0.0.5",
+        "doctrine/dbal": ">=2.6"
     },
     "autoload": {
         "psr-4": {
@@ -26,7 +26,14 @@
     },
     "minimum-stability": "stable",
     "require-dev": {
-        "laravel/laravel": "^5.5",
-        "laravel/lumen": "^5.5"
+        "laravel/laravel": ">=5.5",
+        "laravel/lumen": ">=5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kevupton\\LaravelCoinpayments\\Providers\\LaravelCoinpaymentsServiceProvider"
+            ]
+        }
     }
 }
